@@ -1,5 +1,96 @@
-
 * {
- padding: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+body {
+  font-size: 1.6em;
+  color: #f5f5f5;
+  background: hsl(210, 20%, 75%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background: url('../assets/images/headerBkg.jpg') no-repeat center center;
+  background-size: cover;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 180px;
+  font-family: "Press Start 2P", system-ui;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #ddd;
+}
+
+.red {
+  color: #4a90e2;
+}
+
+.heading {
+  color: #63d3d3;
+  text-shadow: 2px 2px 5px #222;
+  margin: 20px 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0.1));
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.bioPic {
+  width: 300px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 40px;
+  border: 4px solid #333;
+  box-shadow: 4px 4px 10px #333;
+}
+
+#about {
+  width: 100%;
+  min-height: 700px;
+  background: hsl(210, 15%, 70%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#aboutLeft {
+  width: 50%;
+  min-height: 700px;
+  background: #bbb;
+  padding: 30px 40px;
+  font-size: 1.15em;
+  border-right: 1px solid #eee;
+}
+
+#aboutLeft > p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#aboutRight {
+  width: 50%;
+  min-height: 700px;
+  background: linear-gradient(to bottom, hsl(210, 10%, 60%), hsl(210, 10%, 40%));
+  padding: 30px 40px;
+  font-size: 1.15em;
+}
+
+ul {
+  margin-left: 60px;
+  font-size: 1.15em;
+  list-style-type: square;
+  line-height: 1.8;
+}
+
+footer {
+  width: 100%;
+  min-height: 100px;
+  background: hsl(210, 10%, 50%);
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9em;
+  border-top: 2px solid #333;
 }
