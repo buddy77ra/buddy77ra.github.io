@@ -17,13 +17,11 @@ body {
   background: hsl(0, 1%, 73%);
   font-family: sans-serif;
 }
-
-/* Header */
 header.heroBkg {
   width: 100%;
-  height: 600px; /* doubled height */
+  height: 50vh; /* 50% of the viewport height */
   background: url('../assets/images/headerBkg.jpg') center center no-repeat;
-  background-size: 100% 100%; /* force full stretch horizontally AND vertically */
+  background-size: cover; /* Keeps aspect ratio and covers the whole space */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,8 +30,6 @@ header.heroBkg {
   text-shadow: 3px 3px 7px #000;
   border-bottom: 1px solid #fff;
 }
-
-
 /* Headings */
 .heading {
   color: hsla(188, 78%, 61%, 0.9);
@@ -78,7 +74,7 @@ main {
 }
 
 #aboutLeft {
-  background: linear-gradient(hsl(0, 2%, 63%), hsl(0, 14%, 38%));
+  background: #aaa;
   align-items: center;
   gap: 20px;
   border-right: 1px solid #fff;
