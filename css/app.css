@@ -77,14 +77,25 @@ main {
   margin-bottom: 10px;
 }
 
-#aboutLeft img {
-  border-radius: 50%;
-  width: 160px; /* Increased size */
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bio img {
+  width: 160px;
   height: auto;
+  border-radius: 50%;
   box-shadow: 0 0 10px #000;
 }
 
-
+.bio-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+  max-width: 500px;
+}
 
 footer {
   background-color: hsl(0, 2%, 40%);
@@ -96,13 +107,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-  main {
+  .bio {
     flex-direction: column;
-    height: auto;
+    align-items: center;
+    text-align: center;
   }
 
-  #aboutLeft {
-    border-right: none;
-    border-bottom: 1px solid #fff;
+  .bio-text {
+    max-width: 100%;
   }
 }
