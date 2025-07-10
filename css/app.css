@@ -70,7 +70,7 @@ main {
   background: linear-gradient(hsl(0, 2%, 63%), hsl(0, 14%, 38%));
 }
 
-.section-title {
+.heading {
   font-size: 1.5em;
   color: cyan;
   text-shadow: 2px 2px 4px #000;
@@ -79,10 +79,12 @@ main {
 
 #aboutLeft img {
   border-radius: 50%;
-  width: 120px;
+  width: 160px; /* Increased size */
   height: auto;
   box-shadow: 0 0 10px #000;
 }
+
+
 
 footer {
   background-color: hsl(0, 2%, 40%);
