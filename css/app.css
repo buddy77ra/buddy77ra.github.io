@@ -22,8 +22,8 @@ body {
 header.heroBkg {
   width: 100%;
   height: 600px; /* doubled height */
-  background: url('../assets/images/headerBkg.jpg') no-repeat center center;
-  background-size: cover; /* This fills the whole header area */
+  background: url('../assets/images/headerBkg.jpg') center center no-repeat;
+  background-size: 100% 100%; /* force full stretch horizontally AND vertically */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,7 @@ header.heroBkg {
   text-shadow: 3px 3px 7px #000;
   border-bottom: 1px solid #fff;
 }
+
 
 /* Headings */
 .heading {
@@ -77,7 +78,7 @@ main {
 }
 
 #aboutLeft {
-  background: #aaa;
+  background: linear-gradient(hsl(0, 2%, 63%), hsl(0, 14%, 38%));
   align-items: center;
   gap: 20px;
   border-right: 1px solid #fff;
