@@ -1,51 +1,3 @@
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.6em;
-  color: #fff;
-  background: hsl(0, 1%, 73%);
-  /* background-image removed */
-}
-This setup:
-
-Ensures the entire page (html and body) fills the full height of the browser window
-
-Uses flex-direction: column so your layout flows vertically
-
-Allows you to make <main> take up the remaining space between your <header> and <footer> with flex: 1
-
-Let me know if you want a final cleaned-up version of your full CSS!
-
-
-
-
-
-
-
-
-You said:
-sure please
-
-
-ChatGPT said:
-Great! Here's your cleaned-up and optimized full CSS, with everything organized, redundant code removed, and layout ready to stretch the page down to the footer:
-
-css
-Copy
-Edit
-/* Reset and Base Styles */
 * {
   padding: 0;
   margin: 0;
@@ -81,29 +33,36 @@ header.heroBkg {
   border-bottom: 1px solid #fff;
 }
 
-/* Headings and Highlight */
+/* Headings */
 .heading {
-  color: hsla(188, 78%, 61%, 0.691);
+  color: hsla(188, 78%, 61%, 0.9);
   text-shadow: 3px 3px 7px #000;
   margin: 25px 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.67), rgba(255, 255, 255, 0));
-  padding: 7px 0 7px 7px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  padding: 7px 10px;
   border-radius: 8px;
+  word-break: break-word;
 }
 
 .red {
   color: #607be6;
 }
 
+/* Main Section */
+main {
+  flex: 1;
+}
+
 /* About Section */
 #about {
-  flex: 1;
   display: flex;
   flex-wrap: wrap;
   background: hsl(0, 2%, 71%);
   padding: 40px;
   gap: 20px;
   min-height: 500px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #aboutLeft,
@@ -128,10 +87,19 @@ header.heroBkg {
   background: linear-gradient(hsl(0, 2%, 63%), hsl(0, 14%, 38%));
 }
 
+/* Responsive border fix */
+@media (max-width: 700px) {
+  #aboutLeft {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+/* Profile Image */
 .bioPic {
   width: 200px;
   border-radius: 50%;
-  margin-top: 20px;
+  margin: 10px 0;
   border: 3px solid #444;
   box-shadow: 3px 3px 7px #444;
 }
