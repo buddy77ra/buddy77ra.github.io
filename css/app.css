@@ -8,14 +8,13 @@
 body {
   font-size: 1.6em;
   color: #fff;
-  background: hsl(0, 1%, 73%);
-  background: url('../assets/images/headerBkg.jpg') no-repeat center center;
-background-size: cover;
+  background: hsl(0, 1%, 73%); /* plain background for the page */
 }
-header {
+header.heroBkg {
   width: 100%;
   height: 300px;
-  background-color: hsl(210, 60%, 30%); /* or any color you want */
+  background: url('../assets/images/headerBkg.jpg') no-repeat center center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
