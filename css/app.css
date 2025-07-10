@@ -8,13 +8,14 @@
 body {
   font-size: 1.6em;
   color: #fff;
-  background: hsl(0, 1%, 73%); /* plain background for the page */
+  background: hsl(0, 1%, 73%); /* Plain background for the page */
+  /* background-image removed */
 }
 header.heroBkg {
   width: 100%;
   height: 300px;
   background: url('../assets/images/headerBkg.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: 150%;
   display: flex;
   align-items: center;
   justify-content: center;
