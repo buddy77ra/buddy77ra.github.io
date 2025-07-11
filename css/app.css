@@ -89,6 +89,13 @@ main {
   font-size: 1.2em;
   margin-top: 30px; 
 }
+.badges {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
 
 .heading {
   font-size: 1.5em;
