@@ -93,15 +93,15 @@ main {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* increase gap between badges */
+  gap: 20px; 
   justify-content: center;
-  padding: 10px; /* optional: adds breathing room */
+  padding: 10px; 
 }
 
 .badges img {
   transform: scale(2.25);
   transform-origin: center;
-  margin: 5px; /* small margin to prevent overlap */
+  margin: 5px; 
 }
 
 .heading {
