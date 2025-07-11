@@ -22,10 +22,8 @@ body {
 header.heroBkg {
   width: 100vw; 
   height: 50vh;
-  background: url('../assets/images/stormheader.jpg') 
+  background: url('../assets/images/stormheader.jpg') center center no-repeat;
   background-size: cover; 
-  background-position: center center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
