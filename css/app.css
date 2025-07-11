@@ -93,8 +93,14 @@ main {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px; /* spacing between badges */
   justify-content: center;
+  max-width: 350px; /* optional: limit width to encourage wrapping */
+  margin-inline: auto; /* center horizontally */
+}
+
+.badges img {
+  transform: scale(1.5); /* 50% larger */
 }
 
 .heading {
