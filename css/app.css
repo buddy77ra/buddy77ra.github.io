@@ -93,15 +93,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;              /* Adds spacing between both rows and columns */
-  row-gap: 40px;          /* Extra vertical spacing if needed */
+  gap: 20px; 
+  margin-top: 30px;
   max-width: 90%;
-  margin: 30px auto 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .badges img {
-  transform: scale(1.75);
-  transform-origin: center;
+  width: 80px;       
+  height: auto;      
   display: block;
 }
 .heading {
