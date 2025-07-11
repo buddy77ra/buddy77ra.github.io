@@ -90,19 +90,19 @@ main {
   margin-top: 30px; 
 }
 .badges {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  max-width: 90%;         /* Prevent horizontal overflow */
-  margin-left: auto;
-  margin-right: auto;
+  gap: 30px;              /* Adds spacing between both rows and columns */
+  row-gap: 40px;          /* Extra vertical spacing if needed */
+  max-width: 90%;
+  margin: 30px auto 0;
 }
 
 .badges img {
-  transform: scale(1.75); /* Scale up but not too much */
+  transform: scale(1.75);
   transform-origin: center;
+  display: block;
 }
 .heading {
   font-size: 1.5em;
