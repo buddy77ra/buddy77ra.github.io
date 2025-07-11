@@ -20,9 +20,12 @@ body {
 }
 
 header.heroBkg {
+  width: 100vw; 
   height: 50vh;
   background: url('../assets/images/headerBkg.jpg') center center no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +34,9 @@ header.heroBkg {
   text-shadow: 3px 3px 7px #000;
   border-bottom: 1px solid #fff;
   position: relative;
+  overflow: hidden; 
+  margin: 0; 
+  padding: 0;
 }
 
 header.heroBkg::before {
