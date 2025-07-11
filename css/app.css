@@ -93,17 +93,17 @@ main {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
   justify-content: center;
-  padding: 10px; 
+  gap: 20px;
+  max-width: 90%;         /* Prevent horizontal overflow */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .badges img {
-  transform: scale(2.25);
+  transform: scale(1.75); /* Scale up but not too much */
   transform-origin: center;
-  margin: 5px; 
 }
-
 .heading {
   font-size: 1.5em;
   color: cyan;
