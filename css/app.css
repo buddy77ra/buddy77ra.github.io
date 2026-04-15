@@ -234,8 +234,17 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
 .live-projects-wrap {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.live-project-card {
+  width: 48%;
+}
+
+.live-project-card p {
+  margin: 10px 0;
 }
